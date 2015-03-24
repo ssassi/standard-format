@@ -33,7 +33,6 @@ module.exports.transform = function (file) {
 
   var formatted = formatter.format(file, ESFORMATTER_CONFIG)
     .replace(NAMED_FUNCTION_NOSPACE, NAMED_FUNCTION_SPACE)
-    .replace(EOL_SEMICOLON, EOL)
     .replace(SOF_NEWLINES, '')
 
   if (shebang) {
